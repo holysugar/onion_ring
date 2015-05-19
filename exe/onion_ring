@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'onion_ring'
+before, after = ARGV
+
+border = OnionRing::run(before, after)
+
+# borderのleft, top, right, bottomのピクセル数が帰ってくる
+p "border: #{border}"
+p 'success!'
